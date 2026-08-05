@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurante de comida hecha como en casa, con ingredientes frescos y de calidad.">
+    <meta name="keywords" content="restaurante, comida casera, sabores casa">
+    <meta name="author" content="Rosa.Almendarez">
+    <title>Inicio | Sabores del Barrio</title>
+     <link rel="icon" href="recursos/Favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Menu de navegación a otras páginas -->
+     <header id="inicio">
+        <h1>Sabores del Barrio</h1>
+        <p>En Sabores del Barrio, nos dedicamos a ofrecer una <br>experiencia culinaria<br> que te haga sentir como en casa. Nuestro restaurante se especializa<br> en comida casera, preparada con amor y los mejores ingredientes.</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Ubicación</a></li>
+            </ul>
+        </nav>
+     </header>
+
+    <!-- Formulario de contacto -->
+    <main>
+        <section id="contacto">
+            <h2>Formulario reserva mesas</h2>
+            <p>Completa el formulario para reservar.</p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Información de Contacto</legend>
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre completo" minlength="3" maxlength="30">
+
+                    <br><br>
+
+                    <label for="apellido">Apellido*</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su apellido" minlength="2" maxlength="30">
+
+                    <br><br>
+
+                    <label for="correo">Correo electrónico*</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ana@morales.com">
+
+                    <br><br>
+
+                    <label for="telefono">Teléfono*</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" title="Debe ingresar exactamente 8 dígitos, sin espacios ni guiones." required placeholder="Ingrese su número de teléfono">
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Detalles de la Reserva</legend>
+
+                    <br><br>
+
+                    <label for="fecha">Fecha de reserva:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <br><br>
+
+                    <label for="hora">Hora de reserva:</label>
+                    <input type="time" id="hora" name="hora" required>
+
+                    <br><br>
+
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                </fieldset>
+
+                <br>
+
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="400" placeholder="Escribe aquí hasta 400 caracteres..."></textarea>
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+     <!-- Pie de página -->
+        <footer>
+            <address>
+                <p>Dirección: Sabores del Barrio, San Jose Costa Rica</p>
+                <p>Teléfono: 88888888</p>
+                <p>Email: <a href="mailto:info@sabores.com">info@sabores.com</a></p>
+            </address>
+            <p>Sitio externo: <a href="https://info@sabores.com" target="_blank" rel="noopener">www.ecourbanomenu.com</a></p>
+
+            <p><small>&copy; 2024 Sabores del barrio. Todos los derechos reservados.</small></p>
+        </footer>
+        </section>
+    </body>
+</html>
+
+</body>
+</html>
