@@ -176,7 +176,7 @@ footer > div {
     font-size: 1.5rem;
 }
 
-form input:invalid:not (placeholder-shown) {
+form input :invalid(:notplaceholder-shown) {
     border-color: #2c3e50}
-form input:valid:not (placeholder-shown) {
+form input :valid(:notplacedholder-shown) {
     border-color: #8b0000 }
