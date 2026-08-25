@@ -201,20 +201,44 @@ img {
 .hero-texto {
     max-width: 60ch;
     font-size: 1.8rem;
-    margin-bottom:  var(--esp-xs);
+    margin-bottom: var(--esp-xs);
     opacity: 0.94;
 }
 
 .rejilla-servicios {
     display: flex;
     gap: var(--esp-md);
-    margin-bottom: 6rem;
-    text-align: center;
+    flex-wrap: wrap;
+}
 
+.tarjeta {
+    flex: 1 1 28rem;
+    background-color: var(--color-fondo);
+    border: 1px solid #2c3e50;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    padding: var(--esp-md);
+    
+}
 
+.tarjeta h3 {
+    margin-bottom: var(--esp-xs) ;
+}
 
-.tarjetas {
-padding: 20px 40px;
+.tarjeta p{
+    color: #8b0000;
+    flex-grow: 1;
+}
+
+.tarjeta-pie {
+    margin-bottom: 0;
+    padding-top: var(--esp-xs);
+    border-top: 0.1rem solid #2c3e50;
+}
+
+.tarjeta:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: var(--sombra-3);
 }
 
 
@@ -231,12 +255,8 @@ nav ul li {
  background-color: var(--color-secundario);
  color: var(--color-secundario);
 }
-.tarjeta {
-    border: 1px solid #2c3e50;
-    border-radius: 8px;
-    padding: 1rem;
-    display: flex;
-}
+
+
 
 
 table {
@@ -260,23 +280,6 @@ tbody tr:nth-child(even) {
 
 
 
-
-main {
-    max-width: 120rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5rem;
-}
-
-article {
-    background-color:#f9f9f9;
-    max-width: none;
-    justify-content: space-between;
-    text-align: center;
-    align-items: baseline;
-    gap: 2.5rem;
-    padding: 30px;
- }
 
  form :focus {
     outline: none;
