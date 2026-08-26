@@ -59,19 +59,23 @@ h1 {
 h2 {
   font-size: 3rem;
   text-align: center;
+  padding: 2px;
 }
 h3 {
   font-size: 2rem;
+  padding: 2px;
 }
 p {
   font-size: 1rem;
   margin-bottom: var(--esp-sm);
+  padding: 2px;
 }
 
 a {
   color: var(--color-secundario);
   background-color: #f9f9f9;
   text-decoration: none;
+  padding: 2px;
 }
 
 body {
@@ -103,6 +107,7 @@ img {
 #categorias,
 #pedido {
   margin-bottom: var(--esp-xl);
+  padding: 3px;
 }
 
 #portada > h2,
@@ -171,8 +176,8 @@ img {
 }
 
 .menu-principal .enlace-activo {
-  color: #2c3e50;
-  background-color: #f9f9f9;
+  color: #fff;
+  background-color: #8b0000;
 }
 
 .hero {
@@ -266,7 +271,7 @@ img {
 
 .cita p {
   font-family: var(--fuente-titulo);
-  font-size: 0.2rem;
+  font-size: 1rem;
   font-style: italic;
   position: relative;
 }
@@ -281,13 +286,13 @@ img {
 /* CONTENIDO SECUNDARIO ASIDE*/
 #aviso,
 .panel-aviso {
-  background-color: var(--color-secundario);
-  border-left: 0.4rem solid var(--color-secundario);
+  background-color: var(--color-secundario), rgba(0, 0, 0, 0.16);
+  border-left: 0.4rem solid var(--color-linea);
   border-radius: 0 var(--radio) var(--radio) 0;
   padding: var(--esp-md) var(--esp-md);
   margin: var(--esp-lg) auto;
   max-width: var(--ancho-max);
-  box-shadow: var(--sombra-1);
+  box-shadow: var(--sombra-2);
 }
 #aviso h2 {
   font-size: 2.2rem;
@@ -406,4 +411,12 @@ img {
   padding-top: var(--esp-sm);
   border-top: 0.1rem solid rgba(255, 255, 255, 0.22);
   text-align:;
+}
+
+.tarjeta p {
+  color: var(--color-texto);
+}
+
+section h2 {
+    text-align: left;
 }
