@@ -1,0 +1,63 @@
+:root{
+    --texto: #1C1C1C;
+    --color-boton: #ccffcb;
+    --blanco: #fff;
+    --color-hero-alt: #cefdff;
+    --fondo-alt: #F2EEE9;
+    --color-logo: #2D4A5C;
+ 
+ 
+/* FUENTES Y TITULOS */
+    --fuente-titulo: Georgia, "Times New Roman", serif;
+    --fuente-texto: "sans-serif", arial
+ 
+/* ESPACIADO CONVERSION 1REM=10PX*/
+    --esp-xs: 0.8rem;
+    --esp-sm: 1.6rem;
+    --esp-md: 2.4rem;
+    --esp-lg: 4.0rem;
+    --esp-xl: 8.0rem;
+ 
+/* OTROS ELEMENTOS */
+    --radio: 0.6rem;
+    --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,0.6);/* APENAS SEPARADO */
+    --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,0.10);/* TARJETAS */
+    --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,0.16);/* ELEMENTOS ELEVADOS*/
+    --transition: all 0.25s ease;
+    --ancho-max: 120rem;
+ 
+/* GRID */
+    --grid: repeat(auto-fit, minmax(28rem, 1fr));
+ 
+/* FLEX */
+    --flex: 1 1 28rem;
+}
+ 
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+    font-size: 62.5%;
+}
+ 
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: var(--fuente-texto);
+    color: var(--texto);
+}
+ 
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+a{
+    text-decoration: none;
+}
+
