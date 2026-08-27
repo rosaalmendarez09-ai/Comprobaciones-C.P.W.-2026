@@ -118,6 +118,14 @@ nav ul {
     margin: auto;
 }
 
+#pie {
+    background-color: #2D4A5C;
+    color: var(--blanco);
+    text-align: left;
+    margin: auto;
+    padding: 30px;
+}
+
 .destacado {
     padding: 6rem 3rem;
 }
@@ -147,12 +155,35 @@ nav ul {
     margin: 3rem;
 }
 
+#encargo {
+    padding: 20px;
+    max-width: 80%;
+    background-color: #F2EEE9;
+    margin: 5rem auto;
+    font-family: inherit;
+}
+
+input:focus {
+    outline:none;
+    border-color: var(--color-logo);
+    box-shadow: var(--sombra-1);
+}
+
+label {
+    margin-bottom: 2px;
+}
+
+form input [type="radio"],
+form input [type="checkbox"] {
+width: auto;accent-color: var(--color-logo);
+cursor: pointer; 
+}
+
 .testimonio::before {
     content: '\201C';
     font-size: 4rem;
     color: var(--color-logo);
     opacity: 3;
-   
 }
 
 .testimonio{
@@ -205,6 +236,10 @@ border-top: 1px solid var(--color-logo);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 }
+
+
+
+
 
 #principal
 
