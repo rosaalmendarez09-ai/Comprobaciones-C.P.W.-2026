@@ -97,17 +97,19 @@ nav ul {
 }
 
 #bienvenida a{
-    padding: 2rem;
+    padding: 1rem 3rem;
     border: 3px solid var(--color-logo);
     border-radius: 10rem;
     color: var(--texto);
     margin-top: 5rem;
+    box-shadow: var(--sombra-3);
 }
 
 #bienvenida a:hover{
     background-color: var(--color-logo);
     color: var(--blanco);
-    padding: 2rem;
+    padding: 1rem 3rem;
+    box-shadow: var(--sombra-3);
 }
 #servicios {
     background-color: var(--fondo-alt);
@@ -121,13 +123,16 @@ nav ul {
 
 .bloque {
     background-color: var(--blanco);
+    box-shadow: var(--sombra-3);
     border:1px solid #2D4A5C;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
     margin: 3rem;
     max-width: auto;
 }
+
+
 
 
 
