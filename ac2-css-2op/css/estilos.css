@@ -46,9 +46,10 @@ html{
  
 body{
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 3;
     font-family: var(--fuente-texto);
     color: var(--texto);
+    text-align: center;
 }
  
 img{
@@ -57,9 +58,11 @@ img{
     display: block;
 }
  
-a{
-    text-decoration: none;
-}
+a { color: var(--color-logo); text-decoration: none;}
+
+h1 { font-size: 4rem;} h2 { font-size:3rem;} h3 {font-size: 2rem;}
+p { font-size: 1.6rem; margin-bottom: 1.6rem;} 
+
 
 /*cabecera*/
 #cabecera {
@@ -72,31 +75,64 @@ a{
     margin-right: auto;
     position: sticky;
     top: 0;
-    padding: 2rem 1.5rem;
+    padding: 1rem 2rem;
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 3rem;
     font-size: 2rem;
     gap: var(--esp-md);
     font-size: 2rem;
     color: var(--texto);
+    justify-content: space-between;
+    padding: 1rem auto;
+}
+
+.navegacion ul li:hover {
+ background-color: var(--color-boton);
+ padding: 1rem auto;
+ border-radius: var(--radio);
+}
+
+#bienvenida a{
+    padding: 2rem;
+    border: 3px solid var(--color-logo);
+    border-radius: 10rem;
+    color: var(--texto);
+    margin-top: 5rem;
+}
+
+#bienvenida a:hover{
+    background-color: var(--color-logo);
+    color: var(--blanco);
+    padding: 2rem;
+}
+#servicios {
+    background-color: var(--fondo-alt);
+    max-width: var(--ancho-max);
+    margin: auto;
+}
+
+.destacado {
+    padding: 3rem 3rem;
+}
+
+.bloque {
+    background-color: var(--blanco);
+    border:1px solid #2D4A5C;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap: 1rem;
+    margin: 3rem;
+    max-width: auto;
 }
 
 
 
-
-
-
-
-
-
-
 #principal
-#bienvenida
+
 #servicios
 #origen
 #nota
@@ -105,12 +141,12 @@ nav ul {
 
 .identidad
 .navegacion
-.destacado
+
 .destacado-texto
 .accion
 .accion-primaria
 .bloques-servicio
-.bloque
+
 .bloque-nota
 .testimonio
 .testimonio-autoria
