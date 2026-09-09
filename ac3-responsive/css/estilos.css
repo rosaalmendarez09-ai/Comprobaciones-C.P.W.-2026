@@ -342,7 +342,7 @@ img {
 
 /* ─── TABLA ──────────────────────────────────────────────────────────── */
 .tabla {
-  max-width: 100%;
+  width: 100%;
   border-collapse: collapse;
   background-color: var(--blanco);
   border-radius: var(--radio);
@@ -451,14 +451,14 @@ img {
 
 /* ─── FORMULARIO ─────────────────────────────────────────────────────── */
 .formulario {
-  width: 720px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
 .grupo {
   border: 1px solid var(--linea);
   border-radius: var(--radio);
-  padding: 26px;
+  padding: 4rem;
   margin-bottom: 26px;
   background-color: var(--blanco);
 }
