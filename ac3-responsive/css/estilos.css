@@ -15,6 +15,9 @@
   box-sizing: border-box;
 }
 
+html { font-size: 62.5;
+  scroll-behavior: smooth;
+}
 
 /* ─── VARIABLES ──────────────────────────────────────────────────────── */
 :root {
@@ -33,8 +36,8 @@
   --fuente-texto:  'Segoe UI', Arial, sans-serif;
 
   --radio:  6px;
-  --sombra: 0 3px 10px rgba(0, 0, 0, 0.08);
-  --sombra-alta: 0 8px 20px rgba(0, 0, 0, 0.14);
+  --sombra: 0 .3rem 1rem rgba(0, 0, 0, 0.08);
+  --sombra-alta: 0 .8rem 2rem rgba(0, 0, 0, 0.14);
 }
 
 
@@ -53,11 +56,11 @@ h1, h2, h3 {
   color: var(--verde);
 }
 
-h1 { font-size: 52px; }
-h2 { font-size: 34px; }
-h3 { font-size: 22px; }
+h1 { font-size: 5.2rem; }
+h2 { font-size: 3.4rem; }
+h3 { font-size: 2.2rem; }
 
-p { margin-bottom: 18px; }
+p { margin-bottom: 1.8rem; }
 
 a {
   color: var(--terracota);
@@ -72,45 +75,49 @@ img {
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 .seccion {
   width: 1180px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 90px 30px;
+  padding: 9rem 3rem;
 }
 
 .seccion-alterna {
   background-color: var(--crema-alt);
-  width: 100%;
+  max-width: 100%;
 }
 
 .seccion-alterna > * {
   width: 1180px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .seccion-titulo {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .seccion-entrada {
   width: 640px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
   text-align: center;
   color: var(--suave);
 }
 
 .pagina-encabezado {
   width: 1180px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 80px 30px 48px;
+  padding: 8rem 3rem 4.8rem;
   text-align: center;
 }
 
-.pagina-titulo   { margin-bottom: 10px; }
-.pagina-bajada   { color: var(--suave); font-size: 19px; }
+.pagina-titulo   { margin-bottom: 1rem; }
+.pagina-bajada   { color: var(--suave); font-size: 1.9rem; }
 .subtitulo       { margin-top: 28px; margin-bottom: 10px; }
 
 
@@ -120,6 +127,7 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 1180px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 18px 30px;
   background-color: var(--blanco);
@@ -181,7 +189,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 560px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,6 +219,8 @@ img {
 /* ─── TARJETAS · Flexbox ─────────────────────────────────────────────── */
 .fila-propuestas {
   display: flex;
+  flex-wrap: wrap;
+
   gap: 26px;
 }
 
@@ -285,6 +295,7 @@ img {
 /* ─── CITA ───────────────────────────────────────────────────────────── */
 .cita {
   width: 720px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 44px;
   background-color: var(--blanco);
@@ -562,12 +573,13 @@ img {
 .pie {
   background-color: var(--verde);
   color: var(--blanco);
-  padding: 70px 30px 26px;
+  padding: 7rem 3rem 2.6rem;
   margin-top: 80px;
 }
 
 .pie-columnas {
   width: 1180px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   gap: 44px;
@@ -599,6 +611,7 @@ img {
 
 .pie-creditos {
   width: 1180px;
+  max-width: 100%;
   margin: 44px auto 0;
   padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.22);
@@ -607,3 +620,6 @@ img {
   opacity: 0.72;
   margin-bottom: 0;
 }
+
+ * {outline: 1px solid red;} 
+
