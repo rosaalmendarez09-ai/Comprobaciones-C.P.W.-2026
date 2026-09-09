@@ -44,8 +44,8 @@ html { font-size: 62.5;
 /* ─── BASE ───────────────────────────────────────────────────────────── */
 body {
   font-family: var(--fuente-texto);
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 1.6rem;
+  line-height: 1.6;
   color: var(--tinta);
   background-color: var(--crema);
 }
@@ -56,9 +56,9 @@ h1, h2, h3 {
   color: var(--verde);
 }
 
-h1 { font-size: 5.2rem; }
-h2 { font-size: 3.4rem; }
-h3 { font-size: 2.2rem; }
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 2rem; }
 
 p { margin-bottom: 1.8rem; }
 
@@ -126,7 +126,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1180px;
   max-width: 100%;
   margin: 0 auto;
   padding: 18px 30px;
@@ -220,12 +219,11 @@ img {
 .fila-propuestas {
   display: flex;
   flex-wrap: wrap;
-
   gap: 26px;
 }
 
 .tarjeta {
-  width: 360px;
+  max-width: 100%;
   background-color: var(--blanco);
   padding: 28px;
   border-radius: var(--radio);
@@ -258,7 +256,7 @@ img {
 /* ─── GALERÍA · Grid ─────────────────────────────────────────────────── */
 .rejilla-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 18px;
 }
 
@@ -271,8 +269,8 @@ img {
 }
 
 .pieza img {
-  width: 100%;
-  height: 240px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -286,8 +284,8 @@ img {
   right: 0;
   background: linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0));
   color: var(--blanco);
-  padding: 22px 12px 10px;
-  font-size: 14px;
+  padding: 2.2rem 1.2rem 1rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -578,15 +576,15 @@ img {
 }
 
 .pie-columnas {
-  width: 1180px;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   gap: 44px;
   justify-content: space-between;
 }
 
-.pie-bloque { width: 340px; }
+.pie-bloque { max-width: 100%; text-align: center; }
 
 .pie-titulo {
   color: var(--blanco);
