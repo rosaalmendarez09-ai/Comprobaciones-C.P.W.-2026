@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-html { font-size: 62.5;
+html { font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -124,6 +124,7 @@ img {
 /* ─── CABECERA ───────────────────────────────────────────────────────── */
 .cabecera {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
@@ -155,7 +156,6 @@ img {
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 18px;
   list-style: none;
@@ -190,12 +190,13 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: auto;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
   text-align: center;
+  max-width: 100%;
 }
 
 .portada-caja {
@@ -341,11 +342,11 @@ img {
 
 /* ─── TABLA ──────────────────────────────────────────────────────────── */
 .tabla {
-  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   background-color: var(--blanco);
   border-radius: var(--radio);
-  overflow: hidden;
+  overflow-x: auto;
   box-shadow: var(--sombra);
 }
 
@@ -390,8 +391,8 @@ img {
   align-items: flex-start;
 }
 
-.columna        { width: 560px; }
-.columna-figura { width: 560px; margin: 0; }
+.columna        { max-width: 100%;height: auto; }
+.columna-figura { max-width: 100%;height: auto; margin: 0; }
 
 .columna-figura img {
   width: 100%;
@@ -661,4 +662,4 @@ main a[href^="http"]::after {
   }                            
 }
 
- /* * {outline: 1px solid red;}  */
+ * {outline: 1px solid red;}  
