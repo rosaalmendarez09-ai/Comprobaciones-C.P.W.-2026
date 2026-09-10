@@ -217,10 +217,13 @@
         </div>
 
         <figure class="columna-figura">
-          <img src="recursos/taller-5.jpg"
+          <picture>
+             <source media="(min-width: 768)" srcset="recursos/taller-5-mediana.jpg">
+             <source media="(min-width: 468)" srcset="recursos/taller-5-pequena.jpg">
+          <img src="recursos/taller-5-pequena.jpg"
                alt="Puesto de trabajo individual con utensilios ordenados"
                width="1200" height="900" loading="lazy">
-        
+           </picture>
 
 
           <figcaption class="figura-pie">Cada persona tiene su propio puesto</figcaption>
