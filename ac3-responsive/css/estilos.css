@@ -47,6 +47,7 @@ body {
   line-height: 1.6;
   color: var(--tinta);
   background-color: var(--crema);
+
 }
 
 h1,
@@ -82,7 +83,6 @@ img {
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 .seccion {
-  width: 1180px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -95,7 +95,6 @@ img {
 }
 
 .seccion-alterna > * {
-  width: 1180px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -107,7 +106,6 @@ img {
 }
 
 .seccion-entrada {
-  width: 640px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +115,6 @@ img {
 }
 
 .pagina-encabezado {
-  width: 1180px;
   max-width: 100%;
   margin: 0 auto;
   padding: 8rem 3rem 4.8rem;
@@ -356,12 +353,15 @@ img {
 .indice-titulo {
   font-size: 19px;
   margin-bottom: 8px;
+  margin-left: 3rem;
 }
 
 .indice-lista {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 26px;
+  margin-top: 3rem;
   list-style: none;
 }
 
@@ -435,11 +435,11 @@ overflow-x: auto;
 .columna-figura {
   max-width: 100%;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .columna-figura img {
-  width: 100%;
+  max-width: 100%;;
   border-radius: var(--radio);
   box-shadow: var(--sombra);
 }
@@ -720,11 +720,6 @@ overflow-x: auto;
     color: #555;
   }
 }
-@media print {
-  .video-envoltorio {
-    display: none;
-  }
-}
 
 /* Orientacion a pantalla horizontal */
 
@@ -750,14 +745,59 @@ overflow-x: auto;
   .cita {
     padding: var(--esp-lg);
     }
-  }
+    .cabecera { flex-direction: row;}
+    h1 { font-size: 4.0rem;}
+    .column {display: flex;
+    flex-direction: row;}
+    .indice-lista { 
+     display: flex;
+     flex-direction: row;
+    justify-content: center;}
+    .aviso-taller {
+      align-content: center;
+      margin: 0;
+      padding: 0 1.6rem;
+      max-width: 40ch;
+    }
+    .seccion { padding-bottom: 0;}
+    .fila-propuestas { display: grid;
+    grid-template-columns: 3fr 3fr;
+    }
+    .rejilla-galeria {
+      grid-template-columns: 2fr 2fr;
+    }
+    .pie-columnas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .seccion {
+      padding: 6rem;
+    }
+      }
+    
+/*--------escritorio*------------------*/
+
+@media (min-width: 1024px) {
+  .fila-propuestas {display: grid;
+  grid-template-columns: 2fr 2fr 2fr;}
+  .rejilla-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;}
+    .dos-columnas { 
+      display:grid;
+      grid-template-columns: 2fr 3fr;
+      }
+      .columna-rigth {
+        transform: translateY(50px);
+      }
+    }
+  
+    /* Clamp para adaptabilidad de textos */
+    h1 { font-size: clamp( 3.2rem, 8vw, 5.6rem);
+      line-height: 1.1;}
+    h2 { font-size: clam(2.4rem, 5vw, 3.8rem);
+    line-height: 1.2;}
+    h3 {font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    line-height: 1.6;}
 
 
-/* base . escritorio. layout shifter. imagen a la izquierda*/
-@media (min-width: 1200px) {
-  #historia .columna-figura {
-    grid-template-columns: 2fr 3fr;
-    grid-template-areas: 'imagen texto';
-    /*La imagen cambia de lado, sin encoger o bajar*/
-  }
-}
